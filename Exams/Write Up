@@ -1,1 +1,20 @@
 
+(5 points) A sentence or summary of what the question is asking for
+
+The question is asking us to make a game where the user has to guess the 5th number of a random sequence.
+
+(5 points) A list of references and resources to help answer the question
+
+https://www.mathsisfun.com/
+
+(5 points) A brief description of general assumptions to help solve the problem, as well as key observations from the references
+
+I assumed we would be using basic math to form the sequences. I used the site I referenced to find better sequences to use.
+
+(5 points) Your work showing your path from the question to your solution
+
+I figured out the 4 sequences I wanted to use, then put them in the program.
+
+(5 points) A justification of your answer that explains why you believe this is the most correct answer
+
+I tested each sequence multiple times and it had the right and wrong answers.
