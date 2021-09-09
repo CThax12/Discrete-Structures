@@ -1,0 +1,36 @@
+import java.util.Scanner;
+
+public class Problem7 {
+
+	public static void main(String[] args) {
+		Scanner scnr = new Scanner(System.in);
+		
+		String userInput = scnr.nextLine();
+		String[] userNumbers = userInput.split(" ");
+		int index = 0;
+		int highestNumIndex = 0;
+		int lastNum = 0;
+		int highestEvenNum = 0;
+		int lastHighestEvenNum = 0;
+		for (int i = 0; i < userNumbers.length; ++i) {
+			int num = Integer.parseInt(userNumbers[i]);
+			if (num % 2 == 0) {
+				index = i + 1;
+				lastNum = num;
+				
+				if (num > highestEvenNum) {
+					lastHighestEvenNum = highestEvenNum;
+					highestEvenNum = num;
+					highestNumIndex = i + 1;
+				}
+			}
+		}
+		
+		System.out.println("Index of last number: " + index);
+		System.out.println("The number was: " + lastNum);
+		System.out.println("The highest even number was: " + highestEvenNum);
+		System.out.println("The index of the highest even number: " + highestNumIndex);
+
+	}
+
+}
