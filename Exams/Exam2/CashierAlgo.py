@@ -1,22 +1,23 @@
 from timeit import default_timer as timer
 from pprint import pprint
 import tkinter
+import random
 
-def  formatInputs():
-    total = input()
+def  formatInputs(total):
+    total = str(total)
        
-    if "$" in total:
-        total = total.replace("$", "")
     if "." in total:
         total = int(float(total) * 100)
     return total
 
     
-print("Enter total:")
-total = formatInputs()
-print("Enter change given: ")
-amount = formatInputs()
+originalTotal = round(random.uniform(1, 50),2)
+total = formatInputs(originalTotal)
+print("Enter total:", "$" + str(originalTotal))
 
+originalAmount = round(random.uniform(51, 100),2)
+amount = formatInputs(originalAmount)
+print("Enter change given: ", "$" + str(originalAmount))
 change = total - amount
 
 changeAmount = {
